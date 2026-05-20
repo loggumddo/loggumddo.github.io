@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>YOGITTO | Smart Fridge & Ingredient Organizer</title>
+    <meta
+      name="description"
+      content="YOGITTO helps you organize fridge ingredients, check expiration dates, and use food more wisely."
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f4efe6;
+        --paper: rgba(255, 250, 242, 0.96);
+        --paper-strong: #fffdf8;
+        --ink: #1e2430;
+        --muted: #5f6778;
+        --line: #e5d9c8;
+        --accent: #147a61;
+        --accent-soft: #def3ea;
+        --warm: #fff1cb;
+        --shadow: 0 18px 40px rgba(54, 44, 24, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family:
+          "Noto Sans KR",
+          "Hiragino Sans",
+          "Yu Gothic",
+          "Microsoft YaHei",
+          "Segoe UI",
+          sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top right, rgba(255, 213, 117, 0.22), transparent 28%),
+          linear-gradient(180deg, #fbf7ef 0%, var(--bg) 100%);
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .wrap {
+        width: min(980px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 40px 0 56px;
+      }
+
+      .hero {
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        padding: 32px;
+        box-shadow: var(--shadow);
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: var(--accent-soft);
+        color: var(--accent);
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 18px 0 10px;
+        font-size: clamp(40px, 6vw, 64px);
+        line-height: 0.98;
+        letter-spacing: -0.04em;
+      }
+
+      .subtitle {
+        max-width: 720px;
+        margin: 0;
+        font-size: clamp(17px, 2vw, 20px);
+        line-height: 1.65;
+        color: var(--muted);
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        margin-top: 26px;
+      }
+
+      .hero-card {
+        background: var(--paper-strong);
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        padding: 20px;
+      }
+
+      .hero-card h2 {
+        margin: 0 0 10px;
+        font-size: 18px;
+      }
+
+      .hero-card p,
+      .hero-card li {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.65;
+      }
+
+      .hero-card ul {
+        margin: 0;
+        padding-left: 18px;
+      }
+
+      .lang-nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 24px 0 0;
+      }
+
+      .lang-nav a {
+        text-decoration: none;
+        border: 1px solid var(--line);
+        background: #fff;
+        border-radius: 999px;
+        padding: 10px 14px;
+        font-weight: 700;
+      }
+
+      .lang-nav a:hover {
+        background: #fff8ed;
+      }
+
+      .sections {
+        display: grid;
+        gap: 18px;
+        margin-top: 22px;
+      }
+
+      .section {
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        padding: 26px;
+        box-shadow: var(--shadow);
+      }
+
+      .section-header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 12px;
+      }
+
+      .lang-badge {
+        display: inline-flex;
+        align-items: center;
+        padding: 7px 11px;
+        border-radius: 999px;
+        background: var(--warm);
+        font-size: 12px;
+        font-weight: 800;
+      }
+
+      .section h2 {
+        margin: 0;
+        font-size: 28px;
+        line-height: 1.15;
+      }
+
+      .lead {
+        margin: 0;
+        font-size: 17px;
+        line-height: 1.7;
+        color: var(--ink);
+      }
+
+      .feature-list {
+        margin: 16px 0 0;
+        padding-left: 20px;
+      }
+
+      .feature-list li {
+        margin-top: 8px;
+        color: var(--muted);
+        line-height: 1.65;
+      }
+
+      .closing {
+        margin: 16px 0 0;
+        color: var(--muted);
+        line-height: 1.65;
+      }
+
+      .footer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 22px;
+        padding: 18px 20px;
+        background: rgba(255, 255, 255, 0.7);
+        border: 1px solid var(--line);
+        border-radius: 20px;
+      }
+
+      .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .footer-links a {
+        text-decoration: none;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 9px 13px;
+        background: #fff;
+        font-weight: 700;
+      }
+
+      .footer small {
+        color: var(--muted);
+        line-height: 1.5;
+      }
+
+      @media (max-width: 760px) {
+        .wrap {
+          width: min(100% - 20px, 980px);
+          padding: 20px 0 36px;
+        }
+
+        .hero,
+        .section {
+          padding: 22px 18px;
+          border-radius: 22px;
+        }
+
+        .hero-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .section h2 {
+          font-size: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="hero">
+        <div class="eyebrow">YOGITTO · Fridge Companion</div>
+        <h1>YOGITTO</h1>
+        <p class="subtitle">
+          A simple marketing page for App Store listing use. YOGITTO helps people organize fridge
+          ingredients, check expiration dates, and make better use of the food they already have.
+        </p>
+
+        <div class="hero-grid">
+          <article class="hero-card">
+            <h2>What YOGITTO helps with</h2>
+            <ul>
+              <li>Track ingredients stored in the fridge</li>
+              <li>Check expiration dates at a glance</li>
+              <li>Reduce food waste from forgotten items</li>
+              <li>Plan shopping with a clearer view of what is already at home</li>
+            </ul>
+          </article>
+
+          <article class="hero-card">
+            <h2>Available languages on this page</h2>
+            <p>Korean, English, Japanese, and Simplified Chinese.</p>
+          </article>
+        </div>
+
+        <nav class="lang-nav" aria-label="Language shortcuts">
+          <a href="#ko">한국어</a>
+          <a href="#en">English</a>
+          <a href="#ja">日本語</a>
+          <a href="#zh">简体中文</a>
+        </nav>
+      </section>
+
+      <section class="sections">
+        <article class="section" id="ko" lang="ko">
+          <div class="section-header">
+            <h2>냉장고 식재료를 더 쉽게 관리하는 방법</h2>
+            <span class="lang-badge">한국어</span>
+          </div>
+          <p class="lead">
+            YOGITTO는 냉장고 속 식재료를 쉽고 똑똑하게 관리할 수 있도록 도와주는 식재료 관리 앱입니다.
+          </p>
+          <ul class="feature-list">
+            <li>냉장고 안의 식재료를 한눈에 정리할 수 있습니다.</li>
+            <li>소비기한과 유통기한을 확인해 식재료 낭비를 줄일 수 있습니다.</li>
+            <li>남아 있는 재료를 더 효율적으로 활용할 수 있습니다.</li>
+            <li>장보기 전에 집에 있는 재료를 먼저 확인할 수 있습니다.</li>
+          </ul>
+          <p class="closing">
+            바쁜 일상 속에서도 보유 식재료를 더 체계적으로 관리하고 싶은 분들에게 적합합니다.
+          </p>
+        </article>
+
+        <article class="section" id="en" lang="en">
+          <div class="section-header">
+            <h2>Smarter ingredient management for your fridge</h2>
+            <span class="lang-badge">English</span>
+          </div>
+          <p class="lead">
+            YOGITTO is an ingredient management app that helps you organize what is in your fridge
+            and use food more wisely.
+          </p>
+          <ul class="feature-list">
+            <li>Organize fridge ingredients in one place.</li>
+            <li>Check expiration dates at a glance.</li>
+            <li>Reduce waste from forgotten leftovers and stored food.</li>
+            <li>Review what you already have before shopping.</li>
+          </ul>
+          <p class="closing">
+            It is a simple choice for people who want a clearer view of ingredients at home and a
+            more organized kitchen routine.
+          </p>
+        </article>
+
+        <article class="section" id="ja" lang="ja">
+          <div class="section-header">
+            <h2>冷蔵庫の食材をもっと簡単に管理</h2>
+            <span class="lang-badge">日本語</span>
+          </div>
+          <p class="lead">
+            YOGITTOは、冷蔵庫の中の食材をわかりやすく整理し、より無駄なく活用するための食材管理アプリです。
+          </p>
+          <ul class="feature-list">
+            <li>冷蔵庫にある食材をひと目で整理できます。</li>
+            <li>消費期限や賞味期限を確認しやすくなります。</li>
+            <li>残っている食材をより効率よく使えます。</li>
+            <li>買い物前に家にある食材をすぐ確認できます。</li>
+          </ul>
+          <p class="closing">
+            毎日の食材管理をもっとシンプルにしたい方に向いています。
+          </p>
+        </article>
+
+        <article class="section" id="zh" lang="zh-Hans">
+          <div class="section-header">
+            <h2>更轻松地管理冰箱食材</h2>
+            <span class="lang-badge">简体中文</span>
+          </div>
+          <p class="lead">
+            YOGITTO 是一款食材管理应用，帮助你更清楚地整理冰箱中的食材，并更有效地利用家中已有的食物。
+          </p>
+          <ul class="feature-list">
+            <li>一目了然地整理冰箱里的食材。</li>
+            <li>随时查看保质期或到期时间。</li>
+            <li>减少因遗忘而造成的食物浪费。</li>
+            <li>购物前先确认家里已经有的食材。</li>
+          </ul>
+          <p class="closing">
+            适合希望更有条理地管理食材、让厨房日常更轻松的人使用。
+          </p>
+        </article>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-links">
+          <a href="./yogitto-support.html">Support</a>
+          <a href="./yogitto-privacy-en.html">Privacy</a>
+          <a href="./app-ads.txt">app-ads.txt</a>
+        </div>
+        <small>© 2026 YOGITTO. Update support and privacy links if you change the file names.</small>
+      </footer>
+    </main>
+  </body>
+</html>
