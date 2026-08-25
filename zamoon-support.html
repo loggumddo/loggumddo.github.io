@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="ZamOon support and help page" />
+  <title>ZamOon Support</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f7f8;
+      --panel: #ffffff;
+      --text: #171717;
+      --muted: #666;
+      --line: #e7e7ea;
+      --accent: #8c6b2f;
+      --accent-soft: #f4ecdb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111214;
+        --panel: #191a1d;
+        --text: #f3f3f4;
+        --muted: #aaa;
+        --line: #2d2f34;
+        --accent: #d5b36a;
+        --accent-soft: #2a2419;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    .wrap {
+      width: min(860px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 36px 0 56px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .logo {
+      font-size: 34px;
+      font-weight: 800;
+      letter-spacing: .2px;
+      margin: 0;
+    }
+    .subtitle {
+      color: var(--muted);
+      margin: 6px 0 0;
+    }
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      margin: 22px 0 26px;
+    }
+    .tabs button {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      color: var(--text);
+      padding: 10px 14px;
+      border-radius: 999px;
+      font: inherit;
+      cursor: pointer;
+    }
+    .tabs button[aria-selected="true"] {
+      border-color: var(--accent);
+      background: var(--accent-soft);
+      font-weight: 700;
+    }
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 26px;
+      box-shadow: 0 6px 20px rgba(0,0,0,.04);
+    }
+    section + section {
+      border-top: 1px solid var(--line);
+      margin-top: 24px;
+      padding-top: 24px;
+    }
+    h2 {
+      font-size: 20px;
+      margin: 0 0 10px;
+    }
+    h3 {
+      font-size: 16px;
+      margin: 18px 0 6px;
+    }
+    p { margin: 8px 0; }
+    ul { margin: 8px 0; padding-left: 22px; }
+    .note {
+      background: var(--accent-soft);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin-top: 14px;
+    }
+    .contact {
+      color: var(--muted);
+      font-size: 14px;
+    }
+    footer {
+      color: var(--muted);
+      text-align: center;
+      font-size: 13px;
+      margin-top: 22px;
+    }
+    [hidden] { display: none !important; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <h1 class="logo">ZamOon</h1>
+      <p class="subtitle">Support · 도움말 · サポート · 帮助</p>
+    </header>
+
+    <nav class="tabs" aria-label="Language">
+      <button type="button" data-lang="ko" aria-selected="true">한국어</button>
+      <button type="button" data-lang="en" aria-selected="false">English</button>
+      <button type="button" data-lang="ja" aria-selected="false">日本語</button>
+      <button type="button" data-lang="zh" aria-selected="false">简体中文</button>
+    </nav>
+
+    <article class="panel">
+      <div class="lang" data-panel="ko">
+        <section>
+          <h2>ZamOon 지원</h2>
+          <p>ZamOon은 꿈의 키워드를 바탕으로 꿈의 의미와 행운 메시지를 살펴볼 수 있도록 도와주는 앱입니다.</p>
+        </section>
+        <section>
+          <h2>자주 묻는 질문</h2>
+          <h3>행운 카드는 어떻게 만들어지나요?</h3>
+          <p>꿈에서 기억에 남은 핵심 키워드를 선택하고 짧은 호흡 과정을 마치면, 꿈의 흐름과 해석 결과를 바탕으로 행운 카드가 생성됩니다.</p>
+
+          <h3>기기를 변경했거나 앱을 다시 설치했어요.</h3>
+          <p>이전에 ZamOon Premium을 구매했다면, 구매 당시 사용한 것과 동일한 Apple ID로 App Store에 로그인한 뒤 앱의 <strong>구매 복원</strong> 기능을 이용해 주세요. 다시 구매할 필요는 없습니다.</p>
+          <p>복원을 실행하면 성공, 구매 내역 없음, 오류 상태에 따라 앱에서 안내 메시지가 표시됩니다.</p>
+
+          <h3>결제가 중복되었거나 환불이 필요해요.</h3>
+          <p>결제 및 환불은 Apple의 App Store 결제 시스템을 통해 처리됩니다. 구매 내역과 환불 요청은 Apple 계정의 구매 내역에서 확인할 수 있습니다.</p>
+
+          <h3>꿈 해석은 실제 미래를 예측하나요?</h3>
+          <p>아니요. ZamOon의 꿈 해석과 행운 요소는 엔터테인먼트 목적으로 제공되며, 실제 미래의 결과를 보장하거나 예측하지 않습니다.</p>
+        </section>
+        <section>
+          <h2>앱 이용 관련 안내</h2>
+          <ul>
+            <li>ZamOon은 실제 복권 구매 또는 베팅 기능을 제공하지 않습니다.</li>
+            <li>앱 내 행운 요소는 꿈을 즐겁게 해석하기 위한 콘텐츠입니다.</li>
+            <li>앱 동작에 문제가 있다면 최신 버전으로 업데이트한 뒤 다시 시도해 주세요.</li>
+          </ul>
+        </section>
+        <section>
+          <h2>문의</h2>
+          <p class="contact">지원 문의 이메일을 여기에 입력하세요: <strong>loggumddo@gmail.com</strong></p>
+        </section>
+      </div>
+
+      <div class="lang" data-panel="en" hidden>
+        <section>
+          <h2>ZamOon Support</h2>
+          <p>ZamOon helps you explore dream meanings and luck messages based on memorable keywords from your dreams.</p>
+        </section>
+        <section>
+          <h2>Frequently Asked Questions</h2>
+          <h3>How is a Luck Card created?</h3>
+          <p>Select the key words that stood out in your dream and complete the short breathing step. ZamOon then creates a Luck Card based on the dream flow and interpretation.</p>
+
+          <h3>I changed devices or reinstalled the app.</h3>
+          <p>If you previously purchased ZamOon Premium, sign in to the App Store with the same Apple ID used for the original purchase, then use the app's <strong>Restore Purchases</strong> feature. You do not need to purchase it again.</p>
+          <p>After you start a restore, the app will show a message depending on the result: restored successfully, no purchase history found, or an error occurred.</p>
+
+          <h3>I was charged twice or need a refund.</h3>
+          <p>Payments and refunds are handled through Apple’s App Store payment system. You can review purchases and request refunds through your Apple account purchase history.</p>
+
+          <h3>Does ZamOon predict the future?</h3>
+          <p>No. Dream interpretations and luck-related content in ZamOon are provided for entertainment purposes only and do not guarantee or predict real-world outcomes.</p>
+        </section>
+        <section>
+          <h2>Important Information</h2>
+          <ul>
+            <li>ZamOon does not provide real lottery purchases or betting features.</li>
+            <li>Luck-related elements are entertainment content designed to make dream interpretation more enjoyable.</li>
+            <li>If you experience an issue, update to the latest version and try again.</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Contact</h2>
+          <p class="contact">Add your support email here: <strong>loggumddo@gmail.com</strong></p>
+        </section>
+      </div>
+
+      <div class="lang" data-panel="ja" hidden>
+        <section>
+          <h2>ZamOon サポート</h2>
+          <p>ZamOonは、夢の中で印象に残ったキーワードをもとに、夢の意味や幸運メッセージを楽しむためのアプリです。</p>
+        </section>
+        <section>
+          <h2>よくある質問</h2>
+          <h3>ラッキーカードはどのように作られますか？</h3>
+          <p>夢の中で印象に残ったキーワードを選び、短い呼吸ステップを終えると、夢の流れと解釈をもとにラッキーカードが作成されます。</p>
+
+          <h3>機種変更またはアプリを再インストールしました。</h3>
+          <p>以前ZamOon Premiumを購入した場合は、購入時と同じApple IDでApp Storeにサインインし、アプリ内の<strong>購入を復元</strong>機能をご利用ください。再度購入する必要はありません。</p>
+          <p>復元を実行すると、復元成功、購入履歴なし、エラーの各状態に応じてアプリ内に案内メッセージが表示されます。</p>
+
+          <h3>二重請求または返金について知りたいです。</h3>
+          <p>決済と返金はAppleのApp Store決済システムを通じて処理されます。購入履歴や返金申請はAppleアカウントの購入履歴から確認できます。</p>
+
+          <h3>ZamOonは未来を予測しますか？</h3>
+          <p>いいえ。ZamOonの夢占いや幸運に関するコンテンツはエンターテインメント目的であり、現実の結果を保証または予測するものではありません。</p>
+        </section>
+        <section>
+          <h2>ご利用にあたって</h2>
+          <ul>
+            <li>ZamOonには実際の宝くじ購入や賭け機能はありません。</li>
+            <li>幸運に関する要素は、夢占いをより楽しく体験するためのコンテンツです。</li>
+            <li>問題が発生した場合は、最新版へアップデートしてから再度お試しください。</li>
+          </ul>
+        </section>
+        <section>
+          <h2>お問い合わせ</h2>
+          <p class="contact">サポート用メールアドレスを入力してください: <strong>loggumddo@gmail.com</strong></p>
+        </section>
+      </div>
+
+      <div class="lang" data-panel="zh" hidden>
+        <section>
+          <h2>ZamOon 帮助与支持</h2>
+          <p>ZamOon是一款根据梦中令人印象深刻的关键词，帮助你轻松探索梦境含义和幸运讯息的应用。</p>
+        </section>
+        <section>
+          <h2>常见问题</h2>
+          <h3>幸运卡是如何生成的？</h3>
+          <p>选择梦中最令你印象深刻的关键词，并完成简短的呼吸步骤后，ZamOon会根据梦境脉络和解析结果生成幸运卡。</p>
+
+          <h3>我更换了设备或重新安装了应用。</h3>
+          <p>如果你之前购买过ZamOon Premium，请使用购买时相同的Apple ID登录App Store，然后使用应用内的<strong>恢复购买</strong>功能。无需再次购买。</p>
+          <p>执行恢复后，应用会根据结果显示相应提示，包括恢复成功、未找到购买记录或发生错误。</p>
+
+          <h3>出现重复扣款或需要退款怎么办？</h3>
+          <p>付款和退款通过Apple的App Store支付系统处理。你可以在Apple账户的购买记录中查看购买并申请退款。</p>
+
+          <h3>ZamOon会预测未来吗？</h3>
+          <p>不会。ZamOon中的梦境解析和幸运相关内容仅供娱乐，不保证或预测现实中的任何结果。</p>
+        </section>
+        <section>
+          <h2>使用说明</h2>
+          <ul>
+            <li>ZamOon不提供真实的彩票购买或投注功能。</li>
+            <li>应用中的幸运相关内容仅用于让梦境解析体验更加有趣。</li>
+            <li>如遇到问题，请先更新到最新版本后再尝试。</li>
+          </ul>
+        </section>
+        <section>
+          <h2>联系我们</h2>
+          <p class="contact">请在此填写支持邮箱：<strong>loggumddo@gmail.com</strong></p>
+        </section>
+      </div>
+    </article>
+
+    <footer>© ZamOon</footer>
+  </main>
+
+  <script>
+    (function () {
+      const buttons = Array.from(document.querySelectorAll("[data-lang]"));
+      const panels = Array.from(document.querySelectorAll("[data-panel]"));
+
+      function setLanguage(lang) {
+        buttons.forEach((button) => {
+          button.setAttribute("aria-selected", button.dataset.lang === lang ? "true" : "false");
+        });
+        panels.forEach((panel) => {
+          panel.hidden = panel.dataset.panel !== lang;
+        });
+        document.documentElement.lang = lang === "zh" ? "zh-CN" : lang;
+      }
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => setLanguage(button.dataset.lang));
+      });
+
+      const browserLang = (navigator.language || "").toLowerCase();
+      if (browserLang.startsWith("ja")) setLanguage("ja");
+      else if (browserLang.startsWith("zh")) setLanguage("zh");
+      else if (browserLang.startsWith("en")) setLanguage("en");
+      else setLanguage("ko");
+    })();
+  </script>
+</body>
+</html>
