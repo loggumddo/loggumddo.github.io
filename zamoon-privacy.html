@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="ZamOon Privacy Policy" />
+  <title>ZamOon Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f7f8;
+      --panel: #ffffff;
+      --text: #171717;
+      --muted: #666;
+      --line: #e7e7ea;
+      --accent: #8c6b2f;
+      --accent-soft: #f4ecdb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111214;
+        --panel: #191a1d;
+        --text: #f3f3f4;
+        --muted: #aaa;
+        --line: #2d2f34;
+        --accent: #d5b36a;
+        --accent-soft: #2a2419;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    .wrap {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 36px 0 60px;
+    }
+    header { text-align: center; margin-bottom: 24px; }
+    .logo { font-size: 34px; font-weight: 800; margin: 0; }
+    .subtitle { color: var(--muted); margin: 6px 0 0; }
+    .tabs {
+      display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;
+      margin: 22px 0 26px;
+    }
+    .tabs button {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      color: var(--text);
+      padding: 10px 14px;
+      border-radius: 999px;
+      font: inherit;
+      cursor: pointer;
+    }
+    .tabs button[aria-selected="true"] {
+      border-color: var(--accent);
+      background: var(--accent-soft);
+      font-weight: 700;
+    }
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 28px;
+      box-shadow: 0 6px 20px rgba(0,0,0,.04);
+    }
+    section + section {
+      border-top: 1px solid var(--line);
+      margin-top: 24px;
+      padding-top: 24px;
+    }
+    h2 { font-size: 21px; margin: 0 0 10px; }
+    h3 { font-size: 16px; margin: 18px 0 6px; }
+    p { margin: 8px 0; }
+    ul { margin: 8px 0; padding-left: 22px; }
+    .note {
+      background: var(--accent-soft);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin-top: 14px;
+    }
+    .muted { color: var(--muted); }
+    a { color: inherit; text-decoration: underline; }
+    footer {
+      color: var(--muted);
+      text-align: center;
+      font-size: 13px;
+      margin-top: 22px;
+    }
+    [hidden] { display: none !important; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <h1 class="logo">ZamOon</h1>
+      <p class="subtitle">Privacy Policy · 개인정보처리방침 · プライバシーポリシー · 隐私政策</p>
+    </header>
+
+    <nav class="tabs" aria-label="Language">
+      <button type="button" data-lang="ko" aria-selected="true">한국어</button>
+      <button type="button" data-lang="en" aria-selected="false">English</button>
+      <button type="button" data-lang="ja" aria-selected="false">日本語</button>
+      <button type="button" data-lang="zh" aria-selected="false">简体中文</button>
+    </nav>
+
+    <article class="panel">
+      <div class="lang" data-panel="ko">
+        <section>
+          <h2>개인정보처리방침</h2>
+          <p>ZamOon은 사용자의 개인정보를 중요하게 생각합니다. 본 개인정보처리방침은 ZamOon 앱이 어떤 정보를 처리할 수 있는지, 해당 정보가 어떤 목적으로 사용되는지, 그리고 제3자 서비스가 어떤 역할을 하는지 설명합니다.</p>
+          <p class="muted">최종 업데이트: 2026년 8월 26일</p>
+        </section>
+
+        <section>
+          <h2>1. 처리될 수 있는 정보</h2>
+          <p>ZamOon은 계정 생성이나 로그인을 요구하지 않습니다. 다만 앱 기능 제공, 인앱구매 관리, 광고 제공 및 앱 안정성 향상을 위해 아래 정보가 앱 또는 제3자 SDK를 통해 처리될 수 있습니다.</p>
+          <ul>
+            <li>구매 내역 및 거래 관련 정보</li>
+            <li>기기 식별자 등 기기 관련 정보</li>
+            <li>IP 주소를 기반으로 추정될 수 있는 대략적인 위치</li>
+            <li>광고 노출 및 광고 관련 정보</li>
+            <li>앱 실행, 화면 또는 기능 사용 등 제품 상호작용 정보</li>
+            <li>충돌 로그 및 앱 성능 정보</li>
+          </ul>
+          <div class="note">ZamOon은 이름, 전화번호, 주소와 같은 정보를 회원가입을 통해 직접 수집하지 않습니다.</div>
+        </section>
+
+        <section>
+          <h2>2. 정보 이용 목적</h2>
+          <ul>
+            <li>인앱구매 확인, 구매 상태 관리 및 구매 복원</li>
+            <li>광고 제공 및 광고 성과 측정</li>
+            <li>앱 사용 분석 및 서비스 개선</li>
+            <li>오류 진단, 충돌 분석 및 성능 개선</li>
+            <li>부정 사용 방지 및 서비스 안정성 유지</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>3. 제3자 서비스</h2>
+          <p>ZamOon은 다음 제3자 서비스를 사용합니다.</p>
+          <h3>Google AdMob</h3>
+          <p>광고 제공 및 광고 성과 분석을 위해 Google Mobile Ads SDK를 사용합니다. Google은 IP 주소, 기기 식별자, 광고 데이터, 앱 상호작용, 충돌 및 성능 정보 등을 처리할 수 있습니다.</p>
+          <h3>RevenueCat</h3>
+          <p>인앱구매 상태 확인, 구매 복원 및 거래 관리 기능을 위해 RevenueCat을 사용합니다. RevenueCat은 구매 내역, 영수증 또는 거래 관련 정보와 일부 기술 정보를 처리할 수 있습니다.</p>
+          <p>각 제3자 서비스의 개인정보 처리에는 해당 서비스 제공자의 개인정보처리방침이 적용될 수 있습니다.</p>
+        </section>
+
+        <section>
+          <h2>4. 추적 및 광고</h2>
+          <p>현재 ZamOon iOS 앱은 App Tracking Transparency(ATT)를 통한 추적 권한을 요청하지 않습니다. 따라서 사용자의 허가 없이 다른 회사의 앱이나 웹사이트를 넘나드는 추적을 목적으로 IDFA를 사용하도록 구성하지 않습니다.</p>
+          <p>다만 광고 제공과 측정을 위해 AdMob이 기기 관련 정보, 광고 데이터, 앱 상호작용 정보 등을 처리할 수 있습니다.</p>
+        </section>
+
+        <section>
+          <h2>5. 구매 및 복원</h2>
+          <p>인앱구매는 Apple App Store의 결제 시스템을 통해 처리됩니다. ZamOon은 사용자의 신용카드 번호 등 결제수단 정보를 직접 보관하지 않습니다.</p>
+          <p>기기를 변경하거나 앱을 다시 설치한 경우, 구매 당시 사용한 것과 동일한 Apple ID로 로그인한 뒤 앱의 구매 복원 기능을 사용할 수 있습니다.</p>
+        </section>
+
+        <section>
+          <h2>6. 데이터 보관 및 삭제</h2>
+          <p>ZamOon이 직접 저장하는 앱 데이터는 앱 기능 제공에 필요한 범위에서 기기에 저장될 수 있습니다. 앱을 삭제하면 기기에 저장된 로컬 데이터가 함께 삭제될 수 있습니다.</p>
+          <p>AdMob, RevenueCat 등 제3자 서비스가 처리하는 데이터의 보관 기간과 삭제 방식은 각 서비스의 정책에 따릅니다. 관련 데이터 삭제 또는 개인정보 관련 문의는 아래 이메일로 요청할 수 있습니다.</p>
+        </section>
+
+        <section>
+          <h2>7. 이용자의 선택과 권리</h2>
+          <p>사용자는 기기 또는 운영체제 설정에서 광고 관련 설정을 변경할 수 있으며, 개인정보 처리와 관련한 문의 또는 삭제 요청을 아래 연락처로 보낼 수 있습니다.</p>
+        </section>
+
+        <section>
+          <h2>8. 아동의 개인정보</h2>
+          <p>ZamOon은 아동의 개인정보를 의도적으로 수집하기 위한 서비스를 제공하지 않습니다. 관련 법령에 따라 추가 조치가 필요한 경우 적절한 보호조치를 적용합니다.</p>
+        </section>
+
+        <section>
+          <h2>9. 방침의 변경</h2>
+          <p>앱 기능, 사용되는 제3자 서비스 또는 관련 법령이 변경되는 경우 본 개인정보처리방침이 수정될 수 있습니다. 중요한 변경 사항은 이 페이지의 최종 업데이트 날짜를 통해 반영합니다.</p>
+        </section>
+
+        <section>
+          <h2>10. 문의</h2>
+          <p>개인정보 및 지원 문의: <a href="mailto:loggumddo@gmail.com">loggumddo@gmail.com</a></p>
+        </section>
+      </div>
+
+      <div class="lang" data-panel="en" hidden>
+        <section>
+          <h2>Privacy Policy</h2>
+          <p>ZamOon values your privacy. This Privacy Policy explains what information may be processed when you use the ZamOon app, how that information may be used, and the role of third-party services.</p>
+          <p class="muted">Last updated: August 26, 2026</p>
+        </section>
+
+        <section>
+          <h2>1. Information That May Be Processed</h2>
+          <p>ZamOon does not require account registration or login. However, the app and third-party SDKs may process certain information to provide app features, manage in-app purchases, display advertising, and improve app stability.</p>
+          <ul>
+            <li>Purchase history and transaction-related information</li>
+            <li>Device identifiers and other device-related information</li>
+            <li>Approximate location that may be inferred from an IP address</li>
+            <li>Advertising and ad-impression information</li>
+            <li>Product interaction information such as app launches and feature usage</li>
+            <li>Crash logs and performance information</li>
+          </ul>
+          <div class="note">ZamOon does not directly collect information such as your name, phone number, or postal address through account registration.</div>
+        </section>
+
+        <section>
+          <h2>2. How Information Is Used</h2>
+          <ul>
+            <li>To verify in-app purchases, manage purchase status, and restore purchases</li>
+            <li>To provide advertising and measure advertising performance</li>
+            <li>To analyze app usage and improve the service</li>
+            <li>To diagnose errors, analyze crashes, and improve performance</li>
+            <li>To prevent abuse and maintain service reliability</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>3. Third-Party Services</h2>
+          <p>ZamOon uses the following third-party services.</p>
+          <h3>Google AdMob</h3>
+          <p>ZamOon uses the Google Mobile Ads SDK to display ads and analyze advertising performance. Google may process information such as IP address, device identifiers, advertising data, product interactions, crash logs, and performance data.</p>
+          <h3>RevenueCat</h3>
+          <p>ZamOon uses RevenueCat to verify purchase status, restore purchases, and manage transactions. RevenueCat may process purchase history, receipts or transaction-related information, and certain technical information.</p>
+          <p>The privacy policies of these third-party providers may also apply to information they process.</p>
+        </section>
+
+        <section>
+          <h2>4. Tracking and Advertising</h2>
+          <p>The current iOS version of ZamOon does not request tracking permission through App Tracking Transparency (ATT). Accordingly, ZamOon is not configured to use IDFA for tracking across other companies’ apps or websites without the user’s permission.</p>
+          <p>AdMob may still process device-related information, advertising data, and app interaction information for advertising delivery and measurement.</p>
+        </section>
+
+        <section>
+          <h2>5. Purchases and Restoration</h2>
+          <p>In-app purchases are processed through Apple’s App Store payment system. ZamOon does not directly store payment method information such as credit card numbers.</p>
+          <p>If you change devices or reinstall the app, you may restore eligible purchases by signing in with the same Apple ID used for the original purchase and using the app’s Restore Purchases feature.</p>
+        </section>
+
+        <section>
+          <h2>6. Data Retention and Deletion</h2>
+          <p>App data stored directly by ZamOon may be kept locally on your device as needed to provide app functionality. Deleting the app may also delete locally stored data.</p>
+          <p>Data processed by third-party services such as AdMob and RevenueCat is retained and deleted according to each provider’s policies. You may contact us at the email address below with privacy-related questions or deletion requests.</p>
+        </section>
+
+        <section>
+          <h2>7. Your Choices and Rights</h2>
+          <p>You may adjust advertising-related settings through your device or operating system settings. You may also contact us regarding privacy questions or requests concerning your data.</p>
+        </section>
+
+        <section>
+          <h2>8. Children’s Privacy</h2>
+          <p>ZamOon is not designed to intentionally collect personal information from children. Where applicable law requires additional protections, appropriate safeguards will be applied.</p>
+        </section>
+
+        <section>
+          <h2>9. Changes to This Policy</h2>
+          <p>This Privacy Policy may be updated when app features, third-party services, or applicable laws change. Material updates will be reflected by changing the “Last updated” date on this page.</p>
+        </section>
+
+        <section>
+          <h2>10. Contact</h2>
+          <p>Privacy and support inquiries: <a href="mailto:loggumddo@gmail.com">loggumddo@gmail.com</a></p>
+        </section>
+      </div>
+
+      <div class="lang" data-panel="ja" hidden>
+        <section>
+          <h2>プライバシーポリシー</h2>
+          <p>ZamOonはユーザーのプライバシーを大切にしています。本ポリシーでは、ZamOonアプリの利用時に処理される可能性のある情報、その利用目的、および第三者サービスの役割について説明します。</p>
+          <p class="muted">最終更新日：2026年8月26日</p>
+        </section>
+
+        <section>
+          <h2>1. 処理される可能性のある情報</h2>
+          <p>ZamOonではアカウント登録やログインは必要ありません。ただし、アプリ機能の提供、アプリ内購入の管理、広告表示、アプリの安定性向上のため、アプリまたは第三者SDKが以下の情報を処理する場合があります。</p>
+          <ul>
+            <li>購入履歴および取引関連情報</li>
+            <li>端末識別子などの端末関連情報</li>
+            <li>IPアドレスから推定されるおおよその位置情報</li>
+            <li>広告表示および広告関連情報</li>
+            <li>アプリ起動や機能利用などの製品操作情報</li>
+            <li>クラッシュログおよびパフォーマンス情報</li>
+          </ul>
+          <div class="note">ZamOonは、アカウント登録を通じて氏名、電話番号、住所などを直接収集しません。</div>
+        </section>
+
+        <section>
+          <h2>2. 情報の利用目的</h2>
+          <ul>
+            <li>アプリ内購入の確認、購入状態の管理、購入の復元</li>
+            <li>広告の提供および広告効果の測定</li>
+            <li>アプリ利用状況の分析およびサービス改善</li>
+            <li>エラー診断、クラッシュ分析、パフォーマンス改善</li>
+            <li>不正利用の防止およびサービスの安定性維持</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>3. 第三者サービス</h2>
+          <h3>Google AdMob</h3>
+          <p>広告表示および広告効果の分析のため、Google Mobile Ads SDKを使用しています。Googleは、IPアドレス、端末識別子、広告データ、製品操作情報、クラッシュログ、パフォーマンス情報などを処理する場合があります。</p>
+          <h3>RevenueCat</h3>
+          <p>購入状態の確認、購入の復元、取引管理のためにRevenueCatを使用しています。RevenueCatは、購入履歴、レシートまたは取引関連情報、一部の技術情報を処理する場合があります。</p>
+          <p>これら第三者サービスが処理する情報には、各提供者のプライバシーポリシーが適用される場合があります。</p>
+        </section>
+
+        <section>
+          <h2>4. トラッキングと広告</h2>
+          <p>現在のZamOon iOS版は、App Tracking Transparency（ATT）によるトラッキング許可を要求しません。そのため、ユーザーの許可なく他社のアプリやWebサイトを横断して追跡する目的でIDFAを使用するようには構成されていません。</p>
+          <p>ただし、広告配信および測定のため、AdMobが端末関連情報、広告データ、アプリ操作情報などを処理する場合があります。</p>
+        </section>
+
+        <section>
+          <h2>5. 購入と復元</h2>
+          <p>アプリ内購入はApple App Storeの決済システムを通じて処理されます。ZamOonはクレジットカード番号などの支払方法情報を直接保存しません。</p>
+          <p>機種変更やアプリの再インストール後は、購入時と同じApple IDでサインインし、アプリ内の「購入を復元」機能を利用して対象購入を復元できます。</p>
+        </section>
+
+        <section>
+          <h2>6. データの保存と削除</h2>
+          <p>ZamOonが直接保存するアプリデータは、アプリ機能に必要な範囲で端末内に保存される場合があります。アプリを削除すると、端末内のローカルデータも削除される場合があります。</p>
+          <p>AdMobやRevenueCatなど第三者サービスが処理するデータの保存期間および削除方法は、各サービスの方針に従います。プライバシーに関するお問い合わせや削除依頼は、下記メールアドレスまでご連絡ください。</p>
+        </section>
+
+        <section>
+          <h2>7. ユーザーの選択と権利</h2>
+          <p>端末またはOSの設定から広告関連の設定を変更できます。また、個人情報に関するお問い合わせやデータに関するご依頼は、下記連絡先までお送りください。</p>
+        </section>
+
+        <section>
+          <h2>8. 子どものプライバシー</h2>
+          <p>ZamOonは子どもの個人情報を意図的に収集することを目的としたサービスではありません。適用法令により追加の保護が必要な場合は、適切な措置を講じます。</p>
+        </section>
+
+        <section>
+          <h2>9. 本ポリシーの変更</h2>
+          <p>アプリ機能、利用する第三者サービス、または関連法令の変更に応じて、本ポリシーを更新する場合があります。重要な変更は本ページの最終更新日に反映されます。</p>
+        </section>
+
+        <section>
+          <h2>10. お問い合わせ</h2>
+          <p>プライバシーおよびサポートに関するお問い合わせ：<a href="mailto:loggumddo@gmail.com">loggumddo@gmail.com</a></p>
+        </section>
+      </div>
+
+      <div class="lang" data-panel="zh" hidden>
+        <section>
+          <h2>隐私政策</h2>
+          <p>ZamOon重视用户隐私。本隐私政策说明在使用ZamOon应用时可能处理哪些信息、这些信息可能如何使用，以及第三方服务所承担的角色。</p>
+          <p class="muted">最后更新：2026年8月26日</p>
+        </section>
+
+        <section>
+          <h2>1. 可能处理的信息</h2>
+          <p>ZamOon不要求用户注册账户或登录。但为了提供应用功能、管理应用内购买、展示广告及提升应用稳定性，应用或第三方SDK可能处理以下信息：</p>
+          <ul>
+            <li>购买记录及交易相关信息</li>
+            <li>设备标识符及其他设备相关信息</li>
+            <li>可根据IP地址推断的大致位置</li>
+            <li>广告展示及广告相关信息</li>
+            <li>应用启动、功能使用等产品交互信息</li>
+            <li>崩溃日志及性能信息</li>
+          </ul>
+          <div class="note">ZamOon不会通过账户注册直接收集姓名、电话号码或邮寄地址等信息。</div>
+        </section>
+
+        <section>
+          <h2>2. 信息使用目的</h2>
+          <ul>
+            <li>验证应用内购买、管理购买状态及恢复购买</li>
+            <li>提供广告及衡量广告效果</li>
+            <li>分析应用使用情况并改进服务</li>
+            <li>诊断错误、分析崩溃并改善性能</li>
+            <li>防止滥用并维护服务稳定性</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>3. 第三方服务</h2>
+          <h3>Google AdMob</h3>
+          <p>ZamOon使用Google Mobile Ads SDK展示广告并分析广告效果。Google可能处理IP地址、设备标识符、广告数据、产品交互信息、崩溃日志及性能数据等信息。</p>
+          <h3>RevenueCat</h3>
+          <p>ZamOon使用RevenueCat验证购买状态、恢复购买并管理交易。RevenueCat可能处理购买记录、收据或交易相关信息及部分技术信息。</p>
+          <p>第三方服务处理的信息还可能受相应服务提供商自身隐私政策的约束。</p>
+        </section>
+
+        <section>
+          <h2>4. 跟踪与广告</h2>
+          <p>当前ZamOon iOS版本不会通过App Tracking Transparency（ATT）请求跟踪许可。因此，ZamOon不会在未经用户许可的情况下配置使用IDFA跨其他公司的应用或网站进行跟踪。</p>
+          <p>不过，为了广告投放和效果衡量，AdMob仍可能处理设备相关信息、广告数据以及应用交互信息。</p>
+        </section>
+
+        <section>
+          <h2>5. 购买与恢复</h2>
+          <p>应用内购买通过Apple App Store支付系统处理。ZamOon不会直接保存信用卡号码等支付方式信息。</p>
+          <p>更换设备或重新安装应用后，可使用购买时相同的Apple ID登录，并通过应用内“恢复购买”功能恢复符合条件的购买项目。</p>
+        </section>
+
+        <section>
+          <h2>6. 数据保留与删除</h2>
+          <p>ZamOon直接保存的应用数据可能会在提供应用功能所需的范围内存储于设备本地。删除应用时，本地存储的数据也可能被删除。</p>
+          <p>由AdMob、RevenueCat等第三方服务处理的数据，其保留期限和删除方式遵循各服务提供商的政策。有关隐私或数据删除请求，可通过下方邮箱联系我们。</p>
+        </section>
+
+        <section>
+          <h2>7. 用户的选择与权利</h2>
+          <p>用户可以通过设备或操作系统设置调整广告相关选项，也可以通过下方联系方式就隐私问题或数据请求与我们联系。</p>
+        </section>
+
+        <section>
+          <h2>8. 儿童隐私</h2>
+          <p>ZamOon并非以故意收集儿童个人信息为目的的服务。如适用法律要求额外保护措施，我们将采取相应措施。</p>
+        </section>
+
+        <section>
+          <h2>9. 本政策的变更</h2>
+          <p>如应用功能、所使用的第三方服务或适用法律发生变化，本隐私政策可能会更新。重大变更会通过本页面的“最后更新”日期予以体现。</p>
+        </section>
+
+        <section>
+          <h2>10. 联系我们</h2>
+          <p>隐私及支持咨询：<a href="mailto:loggumddo@gmail.com">loggumddo@gmail.com</a></p>
+        </section>
+      </div>
+    </article>
+
+    <footer>© 2026 ZamOon</footer>
+  </main>
+
+  <script>
+    (function () {
+      const buttons = Array.from(document.querySelectorAll("[data-lang]"));
+      const panels = Array.from(document.querySelectorAll("[data-panel]"));
+
+      function setLanguage(lang) {
+        buttons.forEach((button) => {
+          button.setAttribute("aria-selected", button.dataset.lang === lang ? "true" : "false");
+        });
+        panels.forEach((panel) => {
+          panel.hidden = panel.dataset.panel !== lang;
+        });
+        document.documentElement.lang = lang === "zh" ? "zh-CN" : lang;
+      }
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => setLanguage(button.dataset.lang));
+      });
+
+      const browserLang = (navigator.language || "").toLowerCase();
+      if (browserLang.startsWith("ja")) setLanguage("ja");
+      else if (browserLang.startsWith("zh")) setLanguage("zh");
+      else if (browserLang.startsWith("en")) setLanguage("en");
+      else setLanguage("ko");
+    })();
+  </script>
+</body>
+</html>
